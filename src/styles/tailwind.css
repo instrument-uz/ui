@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+  @apply select-none;
+}
+
+.fcc {
+  @apply flex items-center justify-center;
+}
+
+.scale\:click {
+  @apply active:scale-90 cursor-pointer duration-200;
+}

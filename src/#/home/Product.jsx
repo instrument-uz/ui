@@ -1,8 +1,9 @@
+import Header from "@/components/Header";
+
 function Product() {
   return (
     <div>
-      Assalomu Alaykum!
-      <p className="text-[green]">Jit Mode is Enabled</p>
+      <Header />
     </div>
   );
 }

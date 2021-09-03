@@ -1,0 +1,33 @@
+.dots-container {
+  top: 30px !important;
+  background-color: silver;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.3rem 0.5rem !important;
+  border-radius: 50px;
+  @apply outline-none focus:outline-none;
+}
+
+.paging-item {
+  @apply outline-none focus:outline-none;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+}
+
+.slider-list, .slider-frame, .slider {
+    @apply outline-none focus:outline-none;
+}
+
+.paging-item button {
+    @apply outline-none focus:outline-none;
+}
+
+.slider-slide {
+  @apply outline-none focus:outline-none;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

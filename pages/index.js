@@ -1,9 +1,11 @@
-import Product from "@/#/home/Product";
+import Header from "@/components/Header";
+import Slider from "@/#/home/Slider";
 
 function Home() {
   return (
     <div>
-      <Product />
+      <Header />
+      <Slider />
     </div>
   );
 }
