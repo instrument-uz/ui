@@ -18,7 +18,7 @@ html {
 }
 
 .hover\:shadow-blue {
-  box-shadow: 0px 4px 41px 1px rgba(0, 0, 0, 0.03);
+  @apply shadow-100;
 }
 
 .hover\:shadow-blue:hover {

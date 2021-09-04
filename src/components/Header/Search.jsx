@@ -18,12 +18,10 @@ function Search() {
         onFocus={setFocus}
         onBlur={() => setFocus(false)}
         placeholder="Поиск ваших любимых товаров..."
-        className="pl-3 py-1 | w-full outline-none focus:outline-none placeholder-[#C8C8C8] |"
+        spellCheck={false}
+        className="pl-3 py-2 | w-full outline-none focus:outline-none placeholder-[#C8C8C8] | text-sm font-semibold text-[#001A34]"
       />
-      <SvgSearch
-        className="w-5 duration-300"
-        color={`${focus ? "#30A8F7" : "#C8C8C8"}`}
-      />
+      <SvgSearch className="w-5 duration-300" color={`#C8C8C8`} />
     </Container>
   );
 }

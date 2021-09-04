@@ -21,6 +21,11 @@
     @apply outline-none focus:outline-none my-0.5;
 }
 
+.slider-frame {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
 .paging-item button {
     @apply outline-none focus:outline-none;
 }

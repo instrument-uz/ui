@@ -6,18 +6,17 @@ import Container from "@/components/Global/Container";
 
 function Header() {
   return (
-    <header
-      className="py-2 px-5 | flex items-center justify-between | z-50"
-      style={{ boxShadow: "0px 1px 50px rgba(0, 0, 0, 0.02)" }}
-    >
-      <Container className="fcc">
-        <Logo />
+    <header className="py-2 | z-50 | bg-white shadow-100 | sticky top-0">
+      <div className="flex items-center justify-between container mx-auto">
+        <Container className="fcc">
+          <Logo />
 
-        <Menu />
-      </Container>
+          <Menu />
+        </Container>
 
-      <Search />
-      <Nav />
+        <Search />
+        <Nav />
+      </div>
     </header>
   );
 }

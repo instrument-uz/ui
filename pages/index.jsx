@@ -1,15 +1,18 @@
 import Header from "@/components/Header";
 import Slider from "@/#/home/Slider";
 import Categories from "@/#/home/Categories";
+import Products from "@/#/home/Products";
 
 function Home() {
   return (
-    <div>
+    <>
       <Header />
-      <Slider />
-      <Categories />
-      {/* <Products type={`new`} /> */}
-    </div>
+      <section className="container mx-auto">
+        <Slider />
+        <Categories />
+        <Products type={`new`} />
+      </section>
+    </>
   );
 }
 
