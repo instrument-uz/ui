@@ -19,25 +19,33 @@ function Slider() {
 
   return (
     <section className="w-full | pt-5">
-      <Carousel defaultControlsConfig={carouselConfig}>
+      <Carousel
+        defaultControlsConfig={carouselConfig}
+        slidesToShow={1.1}
+        autoplay={true}
+        // withoutControls={true}
+      >
         <Link href="/login">
           <img
             src="https://admin.abad.uz/images/banners/a4oaal.jpeg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[7px] mx-2 overflow-hidden"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mx-2 overflow-hidden"
+            style={{ boxShadow: "0px 2px 12px rgba(0, 0, 0, 0.05)" }}
           />
         </Link>
 
         <Link href="/login">
           <img
             src="https://admin.abad.uz/images/banners/z44f3z.jpg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[7px] mx-2 overflow-hidden"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mx-2 overflow-hidden"
+            style={{ boxShadow: "0px 2px 12px rgba(0, 0, 0, 0.05)" }}
           />
         </Link>
 
         <Link href="/login">
           <img
             src="https://admin.abad.uz/images/banners/x09g1t.png"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[7px] mx-2 overflow-hidden"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mx-2 overflow-hidden"
+            style={{ boxShadow: "0px 2px 12px rgba(0, 0, 0, 0.05)" }}
           />
         </Link>
       </Carousel>

@@ -18,7 +18,7 @@
 }
 
 .slider-list, .slider-frame, .slider {
-    @apply outline-none focus:outline-none;
+    @apply outline-none focus:outline-none my-0.5;
 }
 
 .paging-item button {
