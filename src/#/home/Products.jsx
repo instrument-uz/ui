@@ -18,6 +18,7 @@ function Products() {
       height: "5px",
     },
   });
+
   return (
     <section className="py-12">
       <Container className="inline-block">
