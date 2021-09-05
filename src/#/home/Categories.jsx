@@ -1,22 +1,8 @@
-import Carousel from "nuka-carousel";
+import Carousel from "@/components/Carousel";
 import { useState } from "react";
 import CategoryLink from "./components/CategoryLink";
 
 function Categories(props) {
-  const [carouselConfig] = useState({
-    nextButtonClassName: "hidden",
-    prevButtonClassName: "hidden",
-    pagingDotsContainerClassName: "dots-container",
-    pagingDotsStyle: {
-      fill: "white",
-      borderRadius: "50%",
-      display: "inline-block",
-      margin: "0rem 0.5rem",
-      width: "5px",
-      height: "5px",
-    },
-  });
-
   const [categories] = useState([
     {
       icon: "http://localhost:3000/wash.svg",
@@ -58,11 +44,6 @@ function Categories(props) {
     },
 
     {
-      icon: "http://localhost:3000/wash.svg",
-      title: "Бытовая Техника",
-    },
-
-    {
       icon: "http://localhost:3000/phone.svg",
       title: "Электроника",
     },
@@ -84,12 +65,7 @@ function Categories(props) {
   return (
     <section className="pt-20">
       <div className="flex items-center">
-        <Carousel
-          defaultControlsConfig={carouselConfig}
-          slidesToShow={9.4}
-          withoutControls={true}
-          slidesToScroll={3}
-        >
+        <Carousel slidesToShow={9.4} withoutControls={true}>
           {categories.map((category) => {
             return <CategoryLink category={category} />;
           })}

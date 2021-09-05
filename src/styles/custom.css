@@ -31,7 +31,7 @@
 }
 
 .slider-slide {
-  @apply outline-none focus:outline-none;
+  @apply outline-none focus:outline-none flex justify-start;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;

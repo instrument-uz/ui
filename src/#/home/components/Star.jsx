@@ -7,7 +7,7 @@ function Star(props) {
     <div className="flex items-center">
       {stars.map((star) => (
         <svg
-          className="w-4"
+          className="w-4 mr-1"
           viewBox="0 0 11 10"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ function Star(props) {
 
       {unstars.map(() => (
         <svg
-          className="w-4"
+          className="w-4 mr-1"
           viewBox="0 0 11 10"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
