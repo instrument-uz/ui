@@ -42,11 +42,11 @@ function Products() {
             return (
               <Link href={`/product/${index}`}>
                 <div className="rounded-[7px] group hover:shadow-100 duration-300">
-                  <div>
+                  <div className="py-3">
                     <img
                       src="http://localhost:3000/asd.png"
                       alt="2"
-                      className="mx-auto h-36 | my-4"
+                      className="mx-auto h-36"
                     />
                   </div>
 
