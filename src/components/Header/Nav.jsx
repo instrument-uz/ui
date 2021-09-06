@@ -2,26 +2,22 @@ import SvgCart from "@/icons/SvgCart";
 import SvgHeart from "@/icons/SvgHeart";
 import SvgUser from "@/icons/SvgUser";
 import Container from "../Global/Container";
-import Link from "next/link";
+import Link from "@/components/Link";
 
 function Nav(props) {
   return (
-    <nav className="fcc pl-12">
+    <nav className="fcc pl-7">
       <Link href="/login">
-        <a>
-          <Container className="flex items-center click:scale bg-[#EFF9FF] | px-5 py-2 | rounded-[7px]">
-            <SvgUser className="w-5" />
-            <p className="pl-2 text-sm text-[#30A8F7]">Войти</p>
-          </Container>
-        </a>
+        <Container className="flex items-center click:scale bg-[#EFF9FF] | px-4 py-1.5 | rounded-[7px]">
+          <SvgUser className="h-6" />
+          <p className="pl-2 text-sm text-[#30A8F7]">Войти</p>
+        </Container>
       </Link>
 
       <Link href="/favorites">
-        <a>
-          <Container className="mx-10 | click:scale">
-            <SvgHeart className="w-7" />
-          </Container>
-        </a>
+        <Container className="mx-10 | click:scale">
+          <SvgHeart className="w-7" />
+        </Container>
       </Link>
 
       <Container className="relative click:scale ">
