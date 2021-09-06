@@ -1,4 +1,4 @@
-import Logo from "@/#/home/Logo";
+import Logo from "@/components/Logo";
 import Search from "@/components/Header/Search";
 import Nav from "@/components/Header/Nav";
 import Menu from "@/components/Header/Menu";

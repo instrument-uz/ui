@@ -1,4 +1,4 @@
-import Logo from "@/#/home/Logo";
+import Logo from "@/components/Logo";
 import Container from "@/components/Global/Container";
 
 function Footer(props) {
