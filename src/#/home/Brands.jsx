@@ -4,22 +4,22 @@ import Link from "@/components/Link";
 function Brands(props) {
   const [brands] = useState([
     {
-      url: "http://localhost:3000/images/brands/apple.png",
+      url: "/images/brands/apple.png",
     },
     {
-      url: "http://localhost:3000/images/brands/stihl.png",
+      url: "/images/brands/stihl.png",
     },
     {
-      url: "http://localhost:3000/images/brands/karcher.png",
+      url: "/images/brands/karcher.png",
     },
     {
-      url: "http://localhost:3000/images/brands/lacoste.png",
+      url: "/images/brands/lacoste.png",
     },
     {
-      url: "http://localhost:3000/images/brands/samsung.png",
+      url: "/images/brands/samsung.png",
     },
     {
-      url: "http://localhost:3000/images/brands/mi.png",
+      url: "/images/brands/mi.png",
     },
   ]);
 

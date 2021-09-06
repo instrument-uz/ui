@@ -7,7 +7,7 @@ function NotFound() {
       <div className="fcc flex-col pt-12">
         <div className="404 | h-56">
           <img
-            src="http://localhost:3000/images/404.png"
+            src="/images/404.png"
             alt="404"
             className="h-full object-contain"
           />
