@@ -18,11 +18,11 @@ function Home() {
           type={`new`}
           url={`https://py.abad.uz/v1.0/api/categories/laptops/goods/?limit=16&offset=0&discount=0&brand=Apple`}
         />
-        <Brands />
         <Products
           title={`Домашняя утварь`}
           url={`https://py.abad.uz/v1.0/api/categories/vacuum_cleaners/goods/?limit=16&offset=0&discount=0`}
         />
+        <Brands />
 
         <Products
           title={`Бытовая Техника`}

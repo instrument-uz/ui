@@ -54,7 +54,7 @@ function Products(props) {
                       </p>
                     </Container>
 
-                    <p className="w-48 text-[#6C6C6C] py-2 text-sm truncate">
+                    <p className="w-48 text-[#6C6C6C] py-2 text-sm">
                       {product.name}
                     </p>
                   </Container>
