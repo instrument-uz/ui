@@ -5,59 +5,59 @@ import CategoryLink from "./components/CategoryLink";
 function Categories(props) {
   const [categories] = useState([
     {
-      icon: "http://localhost:3000/wash.svg",
+      icon: "http://localhost:3000/images/wash.svg",
       title: "Бытовая Техника",
     },
 
     {
-      icon: "http://localhost:3000/phone.svg",
+      icon: "http://localhost:3000/images/phone.svg",
       title: "Электроника",
     },
     {
-      icon: "http://localhost:3000/3.svg",
+      icon: "http://localhost:3000/images/3.svg",
       title: "Электроинструменты",
     },
 
     {
-      icon: "http://localhost:3000/4.svg",
+      icon: "http://localhost:3000/images/4.svg",
       title: "Сад",
     },
 
     {
-      icon: "http://localhost:3000/5.svg",
+      icon: "http://localhost:3000/images/5.svg",
       title: "Авто",
     },
 
     {
-      icon: "http://localhost:3000/6.svg",
+      icon: "http://localhost:3000/images/6.svg",
       title: "Дом и Дача",
     },
 
     {
-      icon: "http://localhost:3000/7.svg",
+      icon: "http://localhost:3000/images/7.svg",
       title: "Строительство",
     },
 
     {
-      icon: "http://localhost:3000/8.svg",
+      icon: "http://localhost:3000/images/8.svg",
       title: "Детские товары",
     },
 
     {
-      icon: "http://localhost:3000/phone.svg",
+      icon: "http://localhost:3000/images/phone.svg",
       title: "Электроника",
     },
     {
-      icon: "http://localhost:3000/3.svg",
+      icon: "http://localhost:3000/images/3.svg",
       title: "Электроинструменты",
     },
     {
-      icon: "http://localhost:3000/5.svg",
+      icon: "http://localhost:3000/images/5.svg",
       title: "Авто",
     },
 
     {
-      icon: "http://localhost:3000/6.svg",
+      icon: "http://localhost:3000/images/6.svg",
       title: "Дом и Дача",
     },
   ]);

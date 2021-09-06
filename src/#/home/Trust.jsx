@@ -6,7 +6,7 @@ function Trust() {
       <div className="delivery flex items-center | bg-[#fff2f0a1] px-4 py-3 rounded-[7px] click:scale">
         <div className="h-9 w-9">
           <img
-            src="http://localhost:3000/deliver.png"
+            src="http://localhost:3000/images/deliver.png"
             alt="delivery"
             className="h-full object-contain mx-auto"
           />
@@ -32,7 +32,7 @@ function Trust() {
       <div className="delivery flex items-center | bg-[#dff1ff87] px-4 py-3 rounded-[7px] click:scale">
         <div className="h-9 w-9">
           <img
-            src="http://localhost:3000/cert.png"
+            src="http://localhost:3000/images/cert.png"
             alt="delivery"
             className="h-full object-contain mx-auto"
           />
@@ -56,7 +56,7 @@ function Trust() {
       <div className="delivery flex items-center | bg-[#FFF6E5] px-4 py-3 rounded-[7px] click:scale">
         <div className="h-9 w-9">
           <img
-            src="http://localhost:3000/stamp.png"
+            src="http://localhost:3000/images/stamp.png"
             alt="delivery"
             className="h-full object-contain mx-auto"
           />

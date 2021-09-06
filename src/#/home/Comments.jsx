@@ -17,7 +17,7 @@ function Comments(props) {
                 <div className="rounded-[7px] group duration-300 h-full ">
                   <div className="mb-5 h-24 w-full">
                     <img
-                      src={`http://localhost:3000/ai.png`}
+                      src={`http://localhost:3000/images/ai.png`}
                       alt="2"
                       className="mx-auto h-full"
                     />
@@ -53,7 +53,7 @@ function Comments(props) {
                   <div className="person flex items-center justify-start">
                     <div className="avatar w-7 h-7">
                       <img
-                        src="http://localhost:3000/girl.png"
+                        src="http://localhost:3000/images/girl.png"
                         alt="avatar"
                         className="object-cover object-center h-full"
                       />

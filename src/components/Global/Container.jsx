@@ -1,5 +1,5 @@
 function Container(props) {
-  return <div className={`relative ${props.className}`}>{props.children}</div>;
+  return <div {...props} className={`relative ${props.className}`} />;
 }
 
 export default Container;
