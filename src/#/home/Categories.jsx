@@ -65,7 +65,7 @@ function Categories(props) {
   return (
     <section className="pt-20">
       <div className="flex items-center">
-        <Carousel slidesToShow={9.4} withoutControls={true}>
+        <Carousel slidesToShow={7.7} withoutControls={true}>
           {categories.map((category) => {
             return <CategoryLink category={category} />;
           })}

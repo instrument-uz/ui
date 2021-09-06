@@ -34,7 +34,11 @@ function Brands(props) {
           {brands.map((brand, index) => (
             <Link href={`/brands/${index}`}>
               <div className="h-10 click:scale">
-                <img src={brand.url} alt="" className="h-full mx-auto" />
+                <img
+                  src={brand.url}
+                  alt=""
+                  className="h-full object-contain mx-auto"
+                />
               </div>
             </Link>
           ))}

@@ -1,6 +1,6 @@
 import Carousel from "nuka-carousel";
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/Link";
 
 function Slider() {
   const [carouselConfig] = useState({
@@ -21,27 +21,28 @@ function Slider() {
     <section className="w-full | pt-5">
       <Carousel
         defaultControlsConfig={carouselConfig}
-        slidesToShow={1.1}
+        slidesToShow={1}
+        cellSpacing={10}
         autoplay={true}
       >
-        <Link href="/login">
+        <Link href="/saf">
           <img
             src="https://admin.abad.uz/images/banners/a4oaal.jpeg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mr-2 overflow-hidden hover:shadow-100 duration-300"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] overflow-hidden hover:shadow-100 duration-300"
           />
         </Link>
 
-        <Link href="/login">
+        <Link href="/saf">
           <img
             src="https://admin.abad.uz/images/banners/z44f3z.jpg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mr-2 overflow-hidden"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
           />
         </Link>
 
-        <Link href="/login">
+        <Link href="/saf">
           <img
             src="https://admin.abad.uz/images/banners/x09g1t.png"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] mr-2 overflow-hidden"
+            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
           />
         </Link>
       </Carousel>
