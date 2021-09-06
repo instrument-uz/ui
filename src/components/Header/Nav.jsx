@@ -15,14 +15,14 @@ function Nav(props) {
       </Link>
 
       <Link href="/favorites">
-        <Container className="mx-10 | click:scale">
-          <SvgHeart className="w-7" />
+        <Container className="mx-5 | click:scale">
+          <SvgHeart className="h-6" />
         </Container>
       </Link>
 
-      <Container className="relative click:scale ">
-        <SvgCart className="w-7" />
-        <p className="absolute -top-2 -right-2 bg-[#30A8F7] text-white p-1 rounded-full w-5 h-5 | flex items-center justify-center | text-xs">
+      <Container className="relative click:scale py-2 px-2">
+        <SvgCart className="h-6" />
+        <p className="absolute -top-1 -right-1 bg-[#30A8F7] text-white p-1 rounded-full w-5 h-5 | flex items-center justify-center | text-xs">
           9
         </p>
       </Container>
