@@ -4,7 +4,7 @@ import Container from "@/components/Global/Container";
 function Footer(props) {
   return (
     <footer className="rounded-t-[15px] shadow-200 | px-5 py-5 mt-16">
-      <Container className="container mx-auto max-w-6xl grid grid-cols-4">
+      <Container className="container mx-auto maxW-6xl grid grid-cols-4">
         <div>
           <Logo />
 
@@ -53,20 +53,20 @@ function Footer(props) {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M1 12C1 20.2494 3.75059 23 12 23C20.2494 23 23 20.2494 23 12C23 3.75059 20.2494 1 12 1C3.75059 1 1 3.75059 1 12Z"
                   stroke="black"
-                  stroke-width="0.891892"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="0.891892"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M16.0315 14.3996L11.999 11.9939V6.80786"
                   stroke="black"
-                  stroke-width="0.891892"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="0.891892"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -105,7 +105,7 @@ function Footer(props) {
           </div>
         </div>
         <div className="pt-5">
-          <h1 className="font-extrabold text-lg">
+          <h1 className="font-extrabold textLg">
             <a href="#" className="hover:text-[#30A8F7] duration-200">
               Соглашение
             </a>
@@ -148,7 +148,7 @@ function Footer(props) {
         </div>
 
         <div className="pt-5">
-          <h1 className="font-extrabold text-lg">
+          <h1 className="font-extrabold textLg">
             <a href="#" className="hover:text-[#30A8F7] duration-200">
               О Нас
             </a>

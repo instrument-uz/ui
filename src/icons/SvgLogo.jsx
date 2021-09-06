@@ -29,10 +29,7 @@ function SvgLogo(props) {
           width="763.28"
           height="771.048"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feGaussianBlur in="BackgroundImage" stdDeviation="187.008" />
           <feComposite
             in2="SourceAlpha"
             operator="in"
