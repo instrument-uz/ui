@@ -14,8 +14,8 @@ function Comments(props) {
           {[0, 1, 2].map((n) => (
             <div className="shadow-200 flex rounded-[5px] overflow-hidden">
               <Link href={`/product/`} className="h-full">
-                <div className="rounded-[7px] group duration-300 h-full ">
-                  <div className="mb-5 h-24 w-full">
+                <div className="rounded-[7px] group duration-300 h-full">
+                  <div className="mb-2 h-24 w-full">
                     <img
                       src={`http://localhost:3000/images/ai.png`}
                       alt="2"
@@ -31,12 +31,12 @@ function Comments(props) {
                     <Container className="flex items-center">
                       <Star star={4} size={`small`} />
 
-                      <p className="text-[#6C6C6C] px-2 py-1 text-[11px] text-xs">
+                      <p className="text-[#6C6C6C] px-1 py-1 text-[10px]">
                         (255)
                       </p>
                     </Container>
 
-                    <p className="w-48 text-[#6C6C6C] py-2 text-xs">
+                    <p className="w-40 text-[#6C6C6C] py-2 text-xs">
                       Наушники Apple AirPods Pro в зарядном футляре
                     </p>
                   </Container>

@@ -29,9 +29,9 @@ function Products(props) {
 
       <Container className="pt-12">
         <Carousel slidesToShow={4.7} withoutControls={true}>
-          {state.map((product) => {
+          {state.map((product, index) => {
             return (
-              <Link href={`/product/`} className="h-full">
+              <Link href={`/product/${index}`} className="h-full">
                 <div className="rounded-[7px] group hover:shadow-100 duration-300 h-full ">
                   <div className="mb-5 h-40 w-56 px-3 block">
                     <img

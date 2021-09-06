@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link href="/">
       <a>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center">
           <SvgLogo className="w-10 px-2 py-2" />
           <h1 className="text-2xl font-extrabold text-[#30A8F7]">
             instrument.
