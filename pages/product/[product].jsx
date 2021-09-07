@@ -1,5 +1,11 @@
+import HF from "@/components/Layout/HF";
+
 function Product() {
-  return <div>Product</div>;
+  return (
+    <HF>
+      <div>Product</div>
+    </HF>
+  );
 }
 
 export default Product;

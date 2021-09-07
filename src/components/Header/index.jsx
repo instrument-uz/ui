@@ -7,7 +7,7 @@ import Container from "@/components/Global/Container";
 function Header() {
   return (
     <header className="py-2 | z-50 | bg-white shadow-100 | sticky top-0">
-      <div className="flex items-center justify-between container mx-auto max-w-screen-lg">
+      <div className="flex items-center justify-between container">
         <Container className="fcc">
           <Logo />
 

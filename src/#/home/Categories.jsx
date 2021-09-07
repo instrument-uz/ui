@@ -2,7 +2,7 @@ import Carousel from "@/components/Carousel";
 import { useState } from "react";
 import CategoryLink from "./components/CategoryLink";
 
-function Categories(props) {
+function Reviews(props) {
   const [categories] = useState([
     {
       icon: "/images/wash.svg",
@@ -75,4 +75,4 @@ function Categories(props) {
   );
 }
 
-export default Categories;
+export default Reviews;

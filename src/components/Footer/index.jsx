@@ -4,7 +4,7 @@ import Container from "@/components/Global/Container";
 function Footer(props) {
   return (
     <footer className="rounded-t-[15px] shadow-200 | px-5 py-5 mt-16">
-      <Container className="container mx-auto max-w-screen-lg grid grid-cols-4 gap-10">
+      <Container className="container grid grid-cols-4 gap-10">
         <div>
           <Logo />
           <div className="flex items-center | pt-5">

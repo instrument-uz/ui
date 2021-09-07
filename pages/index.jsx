@@ -3,7 +3,7 @@ import Categories from "@/#/home/Categories";
 import Products from "@/#/home/Products";
 import Brands from "@/#/home/Brands";
 import Trust from "@/#/home/Trust";
-import Comments from "@/#/home/Comments";
+import Reviews from "@/#/home/Reviews";
 import HF from "@/components/Layout/HF";
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
         url={`https://py.abad.uz/v1.0/api/categories/ovens/goods/?limit=16&offset=0&discount=0`}
       />
       <Trust />
-      <Comments />
+      <Reviews />
     </HF>
   );
 }

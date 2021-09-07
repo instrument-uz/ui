@@ -28,3 +28,7 @@ html {
 img {
   @apply pointer-events-none;
 }
+
+.container {
+  @apply mx-auto lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm !important;
+}

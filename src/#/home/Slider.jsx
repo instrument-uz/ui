@@ -1,30 +1,10 @@
-import Carousel from "nuka-carousel";
-import { useState } from "react";
+import Carousel from "@/components/Carousel";
 import Link from "@/components/Link";
 
 function Slider() {
-  const [carouselConfig] = useState({
-    nextButtonClassName: "hidden",
-    prevButtonClassName: "hidden",
-    pagingDotsContainerClassName: "dots-container",
-    pagingDotsStyle: {
-      fill: "white",
-      borderRadius: "50%",
-      display: "inline-block",
-      margin: "0rem 0.5rem",
-      width: "5px",
-      height: "5px",
-    },
-  });
-
   return (
     <section className="w-full | pt-5">
-      <Carousel
-        defaultControlsConfig={carouselConfig}
-        slidesToShow={1}
-        cellSpacing={10}
-        autoplay={true}
-      >
+      <Carousel autoplay={true} withoutControls={false}>
         <Link href="/saf">
           <img
             src="https://admin.abad.uz/images/banners/a4oaal.jpeg"

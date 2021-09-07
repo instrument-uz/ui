@@ -5,9 +5,7 @@ function HF(props) {
   return (
     <>
       <Header />
-      <section className="container mx-auto max-w-screen-lg">
-        {props.children}
-      </section>
+      <section className="container">{props.children}</section>
       <Footer />
     </>
   );
