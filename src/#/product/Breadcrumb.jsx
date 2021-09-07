@@ -27,7 +27,7 @@ function Breadcrumb(props) {
       <div className="flex items-center">
         <Link href="#">
           <p className="hover:text-[#30A8F7] duration-200 text-[#001A34] text-sm">
-            Электроника
+            Ноутбуки, планшеты и компьютеры
           </p>
         </Link>
       </div>

@@ -1,8 +1,8 @@
-import SvgCart from "@/icons/SvgCart";
 import SvgHeart from "@/icons/SvgHeart";
 import SvgUser from "@/icons/SvgUser";
 import Container from "../Global/Container";
 import Link from "@/components/Link";
+import SvgBag from "@/icons/SvgBag";
 
 function Nav(props) {
   return (
@@ -21,7 +21,7 @@ function Nav(props) {
       </Link>
 
       <Container className="relative click:scale py-2 px-2">
-        <SvgCart className="h-6" />
+        <SvgBag className="h-6" />
         <p className="absolute -top-1 -right-1 bg-[#30A8F7] text-white p-1 rounded-full w-5 h-5 | flex items-center justify-center | text-xs">
           9
         </p>
