@@ -20,7 +20,7 @@ function Products(props) {
     <section className="pt-12">
       <Container className="inline-block">
         <h1 className="font-bold text-2xl text-[#001A34]">{props.title}</h1>
-        {props.type === `new` && (
+        {props.type === "new" && (
           <p className="bg-[#F3FFF6] text-[#00F836] inline-block | absolute -top-3 -right-7 text-xs font-bold | px-3 py-1 | rounded-full">
             New
           </p>
