@@ -82,8 +82,8 @@ function Product(props) {
               slideIndex={activeSlide}
               afterSlide={(e) => setActiveSlide(e)}
             >
-              {products.map((product) => (
-                <div className="h-96 w-full">
+              {products.map((product, index) => (
+                <div className="h-96 w-full" key={index}>
                   <img
                     src={product.url}
                     alt="product_image"
@@ -97,6 +97,7 @@ function Product(props) {
               <Carousel slidesToScroll={2} slidesToShow={4.5}>
                 {products.map((product, index) => (
                   <div
+                    key={index}
                     className={cn({
                       "h-[4.5rem] w-full | mr-3 | rounded-[7px] | py-2 | border hover:border-[#30A8F7] duration-300 cursor-pointer": true,
                       "border-[#30A8F7]": activeSlide === index,
