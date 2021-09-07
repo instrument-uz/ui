@@ -32,6 +32,8 @@ function Star(props) {
           />
         </svg>
       ))}
+
+      <p className="text-xs pl-2 text-[#6C6C6C]">({props.total})</p>
     </div>
   );
 
