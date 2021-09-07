@@ -17,7 +17,7 @@ function Products(props) {
   }, []);
 
   return (
-    <section className="py-12">
+    <section className="pt-12">
       <Container className="inline-block">
         <h1 className="font-bold text-2xl text-[#001A34]">{props.title}</h1>
         {props.type === `new` && (
