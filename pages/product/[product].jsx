@@ -48,7 +48,7 @@ function Product(props) {
 
         <Container className="pt-5">
           <h1 className="text-2xl leading-10 font-bold">
-            13.3" Ноутбук Apple MacBook Pro, Apple M1 (3.2 ГГц), RAM 8 ГБ, SSD
+            13.3 Ноутбук Apple MacBook Pro, Apple M1 (3.2 ГГц), RAM 8 ГБ, SSD
             512 ГБ, Apple M1 GPU, macOS, (MYDC2RU/A), серебристый
           </h1>
 
