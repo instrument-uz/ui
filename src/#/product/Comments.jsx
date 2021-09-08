@@ -4,7 +4,6 @@ import Title from "@/components/Title";
 import Upload from "@/components/Upload";
 import SvgArrow from "@/icons/SvgArrow";
 import SvgComment from "@/icons/SvgComment";
-import SvgImage from "@/icons/SvgImage";
 import SvgPen from "@/icons/SvgPen";
 import SvgPlus from "@/icons/SvgPlus";
 import { Tab } from "@headlessui/react";

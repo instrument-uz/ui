@@ -16,6 +16,7 @@ function Upload(props) {
             onClick={() => {
               deleteImg(index);
             }}
+            key={index}
           >
             <img src={img.data_url} alt="r-1" className="h-full object-cover" />
             <div className="absolute inset-0 bg-[#30A8F7] opacity-0 group-hover:opacity-90 cursor-pointer duration-300 | fcc">
