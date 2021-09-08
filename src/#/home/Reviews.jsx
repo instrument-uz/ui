@@ -3,7 +3,7 @@ import Container from "@/components/Global/Container";
 import Link from "@/components/Link";
 import Star from "./components/Star";
 
-function Comments(props) {
+function Reviews(props) {
   return (
     <>
       <Container className="inline-block">
@@ -84,4 +84,4 @@ function Comments(props) {
   );
 }
 
-export default Comments;
+export default Reviews;

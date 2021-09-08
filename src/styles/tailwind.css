@@ -14,6 +14,10 @@ html {
   @apply flex items-center justify-center;
 }
 
+.fc {
+  @apply flex items-center;
+}
+
 .click\:scale {
   @apply active:scale-95 cursor-pointer duration-200;
 }

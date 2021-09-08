@@ -1,6 +1,4 @@
-import Tippy from "@tippyjs/react/headless"; // different import path!
-import "tippy.js/dist/tippy.css"; // optional
-import "tippy.js/themes/light.css"; // optional
+import Tippy from "@tippyjs/react/headless";
 
 function Tooltip(props) {
   return (
@@ -8,7 +6,7 @@ function Tooltip(props) {
       placement="bottom"
       render={(attrs) => (
         <div
-          className="box shadow-300 px-3 py-2 rounded-md bg-white text-xs text-[#001a3494]"
+          className="box shadow-300 px-3 py-2 rounded-md bg-white text-xs text-[#001a3494] duration-300"
           tabIndex="-1"
           {...attrs}
           style={{

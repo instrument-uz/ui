@@ -16,6 +16,7 @@ import SvgPlus from "@/icons/SvgPlus";
 import SvgInfo from "@/icons/SvgInfo";
 import Products from "@/#/home/Products";
 import ReadMore from "@/#/product/components/ReadMore";
+import Comments from "@/#/product/Comments";
 
 function Product(props) {
   const [products] = useState([
@@ -639,6 +640,8 @@ function Product(props) {
         title={`Схожие товары:`}
         url={`https://py.abad.uz/v1.0/api/categories/laptops/goods/?limit=16&offset=14&discount=0&brand=Apple`}
       />
+
+      <Comments />
     </HF>
   );
 
