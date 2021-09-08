@@ -7,6 +7,7 @@ import SvgDelete from "@/icons/SvgDelete";
 
 function Upload(props) {
   const [images, setImages] = useState([]);
+
   return (
     <>
       <div className={`pb-5 | fc ${images.length === 0 && "hidden"}`}>
@@ -34,6 +35,7 @@ function Upload(props) {
         maxNumber={3}
         dataURLKey="data_url"
         class="hidden"
+        acceptType={["jpg", "gif", "png", "jpeg", "webp"]}
       >
         {({
           imageList,
