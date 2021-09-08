@@ -29,7 +29,7 @@ function Reviews(props) {
                     </h1>
 
                     <Container className="flex items-center">
-                      <Star star={4} size={`small`} />
+                      <Star star={3} />
 
                       <p className="text-[#6C6C6C] px-1 py-1 text-[10px]">
                         (255)

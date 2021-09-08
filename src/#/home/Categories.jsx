@@ -65,7 +65,7 @@ function Reviews(props) {
   return (
     <section className="pt-20">
       <div className="flex items-center">
-        <Carousel slidesToShow={7.7} withoutControls={true}>
+        <Carousel slidesToShow={7.7} withoutControls={true} slidesToScroll={4}>
           {categories.map((category) => {
             return <CategoryLink category={category} />;
           })}

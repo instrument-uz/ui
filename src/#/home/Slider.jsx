@@ -4,7 +4,7 @@ import Link from "@/components/Link";
 function Slider() {
   return (
     <section className="w-full | pt-5">
-      <Carousel autoplay={true} withoutControls={false}>
+      <Carousel autoplay={true} withoutControls={false} slidesToScroll={1}>
         <Link href="/saf">
           <img
             src="https://admin.abad.uz/images/banners/a4oaal.jpeg"
