@@ -8,11 +8,11 @@ function ReadMore(props) {
     <section>
       <div
         className={cn({
-          "h-40 overflow-hidden | relative | mt-7 duration-300": true,
+          "h-40 overflow-hidden | relative |  duration-300": true,
           "h-auto": full,
         })}
       >
-        <p>{props.src}</p>
+        <p>{props.src || props.children}</p>
         <div
           className={cn({
             "absolute bottom-0 h-12 w-full": true,
@@ -26,7 +26,7 @@ function ReadMore(props) {
       </div>
       <a
         className={cn({
-          "text-[#30A8F7] duration-200 pt-5 inline-block | cursor-pointer": true,
+          "text-[#30A8F7] duration-200 inline-block | cursor-pointer": true,
           hidden: full,
         })}
         onClick={() => setFull(true)}
