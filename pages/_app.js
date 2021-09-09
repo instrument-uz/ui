@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Component {...pageProps} />
     </>
   );

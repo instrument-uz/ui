@@ -9,9 +9,9 @@ import HF from "@/components/Layout/HF";
 function Home() {
   return (
     <HF>
-      {/* <Slider />
-      <Categories /> */}
-      {/* <Products
+      <Slider />
+      <Categories />
+      <Products
         title={`Новинки`}
         type={`new`}
         url={`https://py.abad.uz/v1.0/api/categories/laptops/goods/?limit=16&offset=0&discount=0&brand=Apple`}
@@ -25,7 +25,7 @@ function Home() {
       <Products
         title={`Бытовая Техника`}
         url={`https://py.abad.uz/v1.0/api/categories/ovens/goods/?limit=16&offset=0&discount=0`}
-    />*/}
+      />
       <Trust />
       <Reviews />
     </HF>
