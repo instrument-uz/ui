@@ -25,9 +25,9 @@ function CategoryBrands() {
     <div>
       {brands.map((brand, index) => (
         <Link
-          key={index}
-          href={`/brands/${index}`}
           className="pt-5 inline-block mx-auto fcc"
+          href={`/brands/${index}`}
+          key={index}
         >
           <div className="h-12 w-full click:scale filter grayscale hover:grayscale-0 duration-200 opacity-25 hover:opacity-100">
             <img
