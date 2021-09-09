@@ -11,8 +11,11 @@ function Reviews(props) {
       </Container>
       <Container className="flex justify-between pt-12">
         <Carousel slidesToShow={2.5}>
-          {[0, 1, 2].map((n) => (
-            <div className="shadow-200 flex rounded-[5px] overflow-hidden">
+          {[0, 1, 2].map((n, index) => (
+            <div
+              className="shadow-200 flex rounded-[5px] overflow-hidden"
+              key={index}
+            >
               <Link href={`/product/`} className="h-full">
                 <div className="rounded-[7px] group duration-300 h-full">
                   <div className="mb-2 h-24 w-full">

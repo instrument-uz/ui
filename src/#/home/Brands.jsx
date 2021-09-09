@@ -32,7 +32,7 @@ function Brands(props) {
       <section className="brands py-12">
         <Container className="grid grid-cols-6 gap-16 grid-flow-row">
           {brands.map((brand, index) => (
-            <Link href={`/brands/${index}`}>
+            <Link href={`/brands/${index}`} key={index}>
               <div className="h-10 click:scale">
                 <img
                   src={brand.url}

@@ -10,6 +10,7 @@ function Star(props) {
       <div className="fc">
         {stars.map((star, index) => (
           <svg
+            key={index}
             className={cn({
               "duration-300": true,
               "cursor-pointer hover:scale-125": props.rate,
