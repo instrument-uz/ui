@@ -49,6 +49,7 @@ function Menu() {
               <Container className="p-3 | border-r border-[#F1F4FF]">
                 {categories.map((category, index) => (
                   <div
+                    key={index}
                     className={cn({
                       "fc items-center | py-2 pl-2 | group hover:bg-[#F2F9FF] cursor-pointer click:scale | rounded-[7px]": true,
                       "bg-[#F2F9FF] text-[#30A8F7]": activeCategory === index,
@@ -80,16 +81,17 @@ function Menu() {
 
             <div className="w-[70%] px-5 pt-5 flex h-[calc(100vh-125px)] overflow-y-auto">
               <div className="z-10 w-5/6 flex flex-wrap items-start">
-                {menu.map((cat) => (
-                  <div className="category pb-7 w-1/2 pr-5">
+                {menu.map((cat, index) => (
+                  <div className="category pb-7 w-1/2 pr-5" key={index}>
                     <Title className="text-lg hover:text-[#30A8F7] duration-200 | cursor-pointer">
                       {cat.name}
                     </Title>
                     {cat.subs.length > 7 ? (
                       <ReadMore>
                         <div className="sub:category | mt-1 | grid grid-cols-1">
-                          {cat.subs.map((sub) => (
+                          {cat.subs.map((sub, num) => (
                             <Link
+                              key={num}
                               href={`/category/2`}
                               className="text-[#001a3494] hover:text-[#30A8F7] duration-200 pt-2 font-semibold text-sm | cursor-pointer"
                             >
@@ -100,8 +102,9 @@ function Menu() {
                       </ReadMore>
                     ) : (
                       <div className="sub:category | mt-1 | grid grid-cols-1">
-                        {cat.subs.map((sub) => (
+                        {cat.subs.map((sub, n) => (
                           <Link
+                            key={n}
                             href={`/category/2`}
                             className="text-[#001a3494] hover:text-[#30A8F7] duration-200 pt-2 font-semibold text-sm | cursor-pointer"
                           >
