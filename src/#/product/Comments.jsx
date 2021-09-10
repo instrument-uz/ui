@@ -1,5 +1,5 @@
 import Container from "@/components/Global/Container";
-import Input from "@/components/Input";
+import Input from "@/components/Form/Textarea";
 import Title from "@/components/Title";
 import Upload from "@/components/Upload";
 import SvgArrow from "@/icons/SvgArrow";
