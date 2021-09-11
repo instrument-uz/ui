@@ -3,11 +3,8 @@ import cn from "clsx";
 
 function Step(props) {
   return (
-    <div className="step w-full | flex flex-col items-center | relative">
-      <div
-        className="fc flex-col justify-center | click:scale | z-20"
-        onClick={() => console.log(12)}
-      >
+    <div className="step w-full | relative">
+      <div className="flex flex-col items-center z-20">
         <p
           className={cn({
             "font-bold | mb-3": true,
@@ -19,7 +16,7 @@ function Step(props) {
         </p>
         <div
           className={cn({
-            "text-white rounded-full | w-12 h-12 fcc | text-xl font-bold inline-block | z-20": true,
+            "text-white rounded-full | w-12 h-12 fcc | text-xl font-bold | z-20": true,
             "bg-[#BFBFBF]": !props.active && !props.active,
             "bg-[#00DA4A]": props.active,
           })}
