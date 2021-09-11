@@ -20,7 +20,6 @@ function Input(props) {
         className={`outline-none focus:outline-none w-full placeholder-[#C8C8C8] | text-[#001A34] ${props.className}`}
         value={props.value}
         onChange={props.onChange}
-        placeholder={props.placeholder}
         maxLength={props.max}
         {...props.register}
       />
