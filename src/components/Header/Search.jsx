@@ -9,8 +9,8 @@ function Search() {
   return (
     <Container
       className={cn({
-        "pr-3 fcc w-full | border duration-300 border-[#C8C8C8] overflow-hidden rounded-full": true,
-        "border-[#30A8F7] ring-1 ring-[#30a7f771]": focus,
+        "pr-3 fcc w-full | border duration-300 overflow-hidden rounded-full": true,
+        "border-[#30A8F7] ring-1 ring-[#30a7f765]": focus,
       })}
     >
       <input
