@@ -1,27 +1,21 @@
 import Input from "@/components/Form/Input";
-import HF from "@/components/Layout/HF";
 import Title from "@/components/Title";
 import SvgGoogle from "@/icons/SvgGoogle";
 import Link from "@/components/Link";
+import SvgArrow from "@/icons/SvgArrow";
 
 function Login(props) {
   return (
-    // <HF>
     <div className="flex items-center justify-center h-screen">
       <div className="w-2/5 shadow-200 | px-10 py-5 | rounded-[7px]">
-        <Title className="text-4xl">Логин</Title>
-
-        <button className="my-7 px-5 py-2 flex items-center justify-center | outline-none focus:outline-none | click:scale | fc | border border-[#30A8F7] | rounded-[10px]">
-          <SvgGoogle className="h-5" />
-          <Title className="text-sm font-semibold | px-3 pl-5 text-[#30A8F7]  ">
-            Войти с Google
-          </Title>
-        </button>
-
-        <div className="fc">
-          <p className="h-0.5 w-1/2 bg-gray-300 | rounded-full"></p>
-          <p className="px-7 text-gray-300">или</p>
-          <p className="h-0.5 w-1/2 bg-gray-300 | rounded-full"></p>
+        <div className="fcc pb-7 | relative">
+          <Title className="text-3xl font-black">Логин</Title>
+          <Link href={`/`}>
+            <SvgArrow
+              className="h-6 rotate-90 | absolute top-2 left-0 | cursor-pointer"
+              color={`black`}
+            />
+          </Link>
         </div>
 
         <div className="py-5">
@@ -52,9 +46,21 @@ function Login(props) {
             Регистрация
           </Link>
         </div>
+
+        <div className="fc my-7">
+          <p className="h-0.5 w-1/2 bg-gray-300 | rounded-full"></p>
+          <p className="px-7 text-gray-300">или</p>
+          <p className="h-0.5 w-1/2 bg-gray-300 | rounded-full"></p>
+        </div>
+
+        <button className="px-5 py-2 | w-full | fcc | outline-none focus:outline-none | click:scale | border border-gray-300 | rounded-[10px]">
+          <SvgGoogle className="h-7" />
+          <Title className="text-sm font-semibold | px-3 pl-5 ">
+            Войти с Google
+          </Title>
+        </button>
       </div>
     </div>
-    // </HF>
   );
 }
 
