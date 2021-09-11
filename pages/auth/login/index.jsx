@@ -3,8 +3,21 @@ import Title from "@/components/Title";
 import SvgGoogle from "@/icons/SvgGoogle";
 import Link from "@/components/Link";
 import SvgArrow from "@/icons/SvgArrow";
+import { useForm } from "react-hook-form";
+import cn from "clsx";
 
 function Login(props) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  console.log(errors);
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="w-2/5 shadow-200 | px-10 py-5 | rounded-[7px]">
@@ -20,14 +33,71 @@ function Login(props) {
 
         <div className="py-5">
           <Title className="pb-3 | text-lg">Телефон:</Title>
-          <Input className="py-1 px-2" placeholder={`+998-__-___-___`} />
+          <div className="flex">
+            <h1 className="bg-gray-100 text-gray-400 px-2 fcc rounded-l-[7px]">
+              + 998
+            </h1>
+            <Input
+              className={cn({
+                "py-1 px-2 rounded-l-[0px] rounded-r-[7px] border-l-0": true,
+                "border-red-500": errors.phone,
+              })}
+              placeholder={`__-___-___`}
+              register={{
+                ...register("phone", {
+                  required: {
+                    value: true,
+                    message: "Обязательно к заполнению",
+                  },
+                  pattern: {
+                    value: /^[+998]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g,
+                    message: "Недействительный Номер телефона",
+                  },
+                  maxLength: {
+                    value: 9,
+                    message: "Минимум 9 символов", // JS only: <p>error message</p> TS only support string
+                  },
+                  minLength: {
+                    value: 9,
+                    message: "Максимум 9 символов",
+                  },
+                }),
+              }}
+            />
+          </div>
+          <p className="text-red-500 text-sm pt-2">{errors?.phone?.message}</p>
         </div>
         <div>
           <Title className="pb-3 | text-lg">Пароль:</Title>
-          <Input className="py-1 px-2" placeholder={`Пароль...`} />
+          <Input
+            className={cn({
+              "py-1 px-2": true,
+              "border-red-500": errors.password,
+            })}
+            placeholder={`Пароль...`}
+            type={`password`}
+            register={{
+              ...register("password", {
+                required: {
+                  value: true,
+                  message: "Обязательно к заполнению",
+                },
+                pattern: {
+                  value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+                  message: "Минимум 8 символов, Минимум 1 буква и 1 цифра:",
+                },
+              }),
+            }}
+          />
+          <p className="text-red-500 text-sm pt-2">
+            {errors?.password?.message}
+          </p>
         </div>
 
-        <button className="bg-[#00DA4A] text-white text-xl font-extrabold fcc w-full py-3 mt-5 rounded-[10px] click:scale outline-none focus:outline-none">
+        <button
+          className="bg-[#00DA4A] text-white text-xl font-extrabold fcc w-full py-3 mt-5 rounded-[10px] click:scale outline-none focus:outline-none"
+          onClick={handleSubmit(onSubmit)}
+        >
           Войти
         </button>
         <div className="fc justify-between | mt-3">
