@@ -28,7 +28,11 @@ function Products(props) {
       </Container>
 
       <Container className="pt-12">
-        <Carousel slidesToShow={4.2} slidesToScroll={3} withoutControls={true}>
+        <Carousel
+          slidesToShow={props.slides || 4.2}
+          slidesToScroll={props.scroll || 3}
+          withoutControls={true}
+        >
           {state.map((product, index) => {
             return (
               <Link href={`/product/${index}`} className="h-full" key={index}>

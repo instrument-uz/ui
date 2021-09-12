@@ -28,6 +28,7 @@ function ReadMore(props) {
         className={cn({
           "text-[#30A8F7] duration-200 inline-block | cursor-pointer": true,
           hidden: full,
+          "text-sm": props.size,
         })}
         onClick={() => setFull(true)}
       >

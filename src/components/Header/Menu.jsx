@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Title from "@/components/Title";
 import Container from "@/components/Global/Container";
 import Link from "@/components/Link";
-import CategoryBrands from "@/components/Header/CategoryBrands";
+import CategoryBrands from "@/components/Header/Brands";
 import cn from "clsx";
 import ReadMore from "@/#/product/components/ReadMore";
 import { Popover, Transition } from "@headlessui/react";

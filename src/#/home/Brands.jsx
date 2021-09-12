@@ -1,6 +1,7 @@
 import Container from "@/components/Global/Container";
 import { useState } from "react";
 import Link from "@/components/Link";
+
 function Brands(props) {
   const [brands] = useState([
     {
@@ -21,6 +22,12 @@ function Brands(props) {
     {
       url: "/images/brands/mi.png",
     },
+    {
+      url: "/images/brands/dell.png",
+    },
+    {
+      url: "/images/brands/hu.png",
+    },
   ]);
 
   return (
@@ -30,7 +37,12 @@ function Brands(props) {
       </Container>
 
       <section className="brands py-12">
-        <Container className="grid grid-cols-6 gap-16 grid-flow-row">
+        <Container
+          className={`grid gap-16 grid-flow-row`}
+          style={{
+            gridTemplateColumns: `repeat(${props.count || 6}, minmax(0, 1fr))`,
+          }}
+        >
           {brands.map((brand, index) => (
             <Link href={`/brands/${index}`} key={index}>
               <div className="h-10 click:scale">

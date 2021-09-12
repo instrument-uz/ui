@@ -1,29 +1,51 @@
 import Carousel from "@/components/Carousel";
 import Link from "@/components/Link";
+import cn from "clsx";
 
-function Slider() {
+function Slider(props) {
   return (
     <section className="w-full | pt-5">
       <Carousel autoplay={true} withoutControls={false} slidesToScroll={1}>
         <Link href="/saf">
-          <img
-            src="https://admin.abad.uz/images/banners/a4oaal.jpeg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px] overflow-hidden hover:shadow-100 duration-300"
-          />
+          <div
+            className={cn({
+              "h-80": !props.size || props.size === `large`,
+              "h-64": props.size === `small`,
+            })}
+          >
+            <img
+              src="/images/full-banner.png"
+              className="object-cover h-full | outline-none focus:outline-none | rounded-[10px] overflow-hidden hover:shadow-100 duration-300"
+            />
+          </div>
         </Link>
 
         <Link href="/saf">
-          <img
-            src="https://admin.abad.uz/images/banners/z44f3z.jpg"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
-          />
+          <div
+            className={cn({
+              "h-80": !props.size || props.size === `large`,
+              "h-64": props.size === `small`,
+            })}
+          >
+            <img
+              src="/images/full-banner2.png"
+              className="object-cover h-full | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
+            />
+          </div>
         </Link>
 
         <Link href="/saf">
-          <img
-            src="https://admin.abad.uz/images/banners/x09g1t.png"
-            className="object-cover h-80 | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
-          />
+          <div
+            className={cn({
+              "h-80": !props.size || props.size === `large`,
+              "h-64": props.size === `small`,
+            })}
+          >
+            <img
+              src="/images/full-banner3.png"
+              className="object-cover h-full | outline-none focus:outline-none | rounded-[10px]  overflow-hidden"
+            />
+          </div>
         </Link>
       </Carousel>
     </section>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "@/components/Link";
-function CategoryBrands() {
+import cn from "clsx";
+function Brands(props) {
   const [brands] = useState([
     {
       url: "/images/brands/apple.png",
@@ -22,14 +23,19 @@ function CategoryBrands() {
   ]);
 
   return (
-    <div>
+    <div className={props.className}>
       {brands.map((brand, index) => (
         <Link
-          className="pt-5 inline-block mx-auto fcc"
+          className={`pt-5 mx-auto fcc w-full`}
           href={`/brands/${index}`}
           key={index}
         >
-          <div className="h-12 w-full click:scale filter grayscale hover:grayscale-0 duration-200 opacity-25 hover:opacity-100">
+          <div
+            className={cn({
+              "h-12 w-full click:scale filter grayscale hover:grayscale-0 duration-200 opacity-25 hover:opacity-100": true,
+              "h-16": props.size === `large`,
+            })}
+          >
             <img
               src={brand.url}
               alt=""
@@ -42,4 +48,4 @@ function CategoryBrands() {
   );
 }
 
-export default CategoryBrands;
+export default Brands;

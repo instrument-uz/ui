@@ -8,10 +8,10 @@ function Tooltip(props) {
         <div
           className="box shadow-300 px-3 py-2 rounded-md bg-white text-xs text-[#001a3494] duration-300"
           tabIndex="-1"
-          {...attrs}
           style={{
             maxWidth: "25rem",
           }}
+          {...attrs}
         >
           {props.desc}
         </div>
