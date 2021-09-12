@@ -21,8 +21,8 @@ function Carousell(props) {
     <Carousel
       defaultControlsConfig={carouselConfig}
       withoutControls={true}
-      slidesToScroll={1}
-      slidesToShow={1}
+      slidesToScroll={props.slide || 1}
+      slidesToShow={props.slides || 1}
       cellSpacing={10}
       {...props}
     />

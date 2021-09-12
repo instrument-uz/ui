@@ -12,6 +12,8 @@ import cn from "clsx";
 import SvgDone from "@/icons/SvgDone";
 import Tooltip from "@/components/Tooltip";
 import SvgInfo from "@/icons/SvgInfo";
+import Breadcrumb from "@/#/product/Breadcrumb";
+import ProductSelect from "@/#/category/ProductSelect";
 
 function Category() {
   const [menu, setMenu] = useState([]);
@@ -173,7 +175,10 @@ function Category() {
             </div>
           </div>
         </Layout.Aside>
-        <Layout.Body></Layout.Body>
+        <Layout.Body>
+          <Breadcrumb />
+          <ProductSelect />
+        </Layout.Body>
       </Layout>
     </HF>
   );
