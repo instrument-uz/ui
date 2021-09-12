@@ -32,6 +32,7 @@ function Menu() {
         <h2 className="font-normal text-sm text-[#30A8F7] pl-3">Категории</h2>
       </Popover.Button>
       <Transition
+        className="z-[10000000]"
         enter="transition ease-in"
         enterFrom="opacity-0"
         enterTo="opacity-100"

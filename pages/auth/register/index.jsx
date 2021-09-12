@@ -1,5 +1,4 @@
 import Input from "@/components/Form/Input";
-
 import Title from "@/components/Title";
 import SvgGoogle from "@/icons/SvgGoogle";
 import Link from "@/components/Link";
@@ -17,7 +16,9 @@ function Register(props) {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const router = useRouter();
+
   console.log(errors);
 
   const onSubmit = (data) => {
@@ -33,7 +34,7 @@ function Register(props) {
     phone: "+998907271449",
     code: "1234",
     data: {
-      name: "Bbaur",
+      name: "Babur",
       date_of_birth: "040.07.2001",
       password: "12345",
     },
@@ -167,7 +168,7 @@ function Register(props) {
                       },
                       maxLength: {
                         value: 6,
-                        message: "Максимум 6 символов", // JS only: <p>error message</p> TS only support string
+                        message: "Максимум 6 символов",
                       },
                       minLength: {
                         value: 6,
