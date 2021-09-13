@@ -82,7 +82,7 @@ function Category() {
       });
   }, []);
 
-  const v = (
+  return (
     <HF>
       <Layout>
         <Layout.Aside className="pt-5">
