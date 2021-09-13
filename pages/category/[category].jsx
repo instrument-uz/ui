@@ -116,8 +116,9 @@ function Category() {
             <Title className="duration-200 text-xl">Цвет</Title>
 
             <div className="colors | grid grid-cols-5 justify-items-start gap-2 | py-3 w-2/3">
-              {colors.map((color) => (
+              {colors.map((color, index) => (
                 <p
+                  key={index}
                   className="border border-gray-300 | rounded-full | w-9 h-9 | click:scale"
                   style={{ backgroundColor: color.color }}
                 ></p>
@@ -131,6 +132,7 @@ function Category() {
             <div className="colors | flex items-center flex-wrap gap-2 | pt-3">
               {rams.map((ram, index) => (
                 <p
+                  key={index}
                   className={cn({
                     "px-6 font-semibold py-2 mb-2 | text-sm | border border-gray-300 fcc | click:scale | rounded-full": true,
                     "bg-[#30A8F7] text-white": index === 1 || index == 3,
@@ -162,6 +164,7 @@ function Category() {
             <div className="colors | flex items-center flex-wrap gap-2 ">
               {os.map((ram, index) => (
                 <p
+                  key={index}
                   className={cn({
                     "px-6 font-semibold py-2 | text-sm | border border-gray-300 fcc | click:scale | rounded-full": true,
                     "bg-[#30A8F7] text-white": index === 0 || index == 3,
