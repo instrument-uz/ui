@@ -82,7 +82,7 @@ function Category() {
       });
   }, []);
 
-  return (
+  const v = (
     <HF>
       <Layout>
         <Layout.Aside className="pt-5">
@@ -128,7 +128,7 @@ function Category() {
           <div className="colors mt-7">
             <Title className="duration-200 text-xl">Объем видеопамяти</Title>
 
-            <div className="colors | flex items-center flex-wrap gap-2 | py-3">
+            <div className="colors | flex items-center flex-wrap gap-2 | pt-3">
               {rams.map((ram, index) => (
                 <p
                   className={cn({
@@ -159,11 +159,11 @@ function Category() {
               </Tooltip>
             </div>
 
-            <div className="colors | flex items-center flex-wrap gap-2 | py-3">
+            <div className="colors | flex items-center flex-wrap gap-2 ">
               {os.map((ram, index) => (
                 <p
                   className={cn({
-                    "px-6 font-semibold py-2 mb-2 | text-sm | border border-gray-300 fcc | click:scale | rounded-full": true,
+                    "px-6 font-semibold py-2 | text-sm | border border-gray-300 fcc | click:scale | rounded-full": true,
                     "bg-[#30A8F7] text-white": index === 0 || index == 3,
                   })}
                 >
@@ -178,6 +178,25 @@ function Category() {
         <Layout.Body>
           <Breadcrumb />
           <ProductSelect />
+          <Products
+            title={`Моноблоки`}
+            url={`https://py.abad.uz/v1.0/api/categories/all_in_one/goods/?limit=16&offset=0&discount=0`}
+            slides={2.7}
+            scroll={2}
+          />
+          <Products
+            url={`https://py.abad.uz/v1.0/api/categories/126/goods/?limit=12`}
+            slides={2.7}
+            scroll={2}
+            title={`Планшеты`}
+          />
+
+          <Products
+            title={`Ноутбуки`}
+            scroll={2}
+            url={`https://py.abad.uz/v1.0/api/categories/laptops/goods/?limit=16&offset=0&discount=0`}
+            slides={2.7}
+          />
         </Layout.Body>
       </Layout>
     </HF>

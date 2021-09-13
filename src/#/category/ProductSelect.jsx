@@ -165,12 +165,12 @@ function ProductSelect(props) {
   ];
 
   return (
-    <section className="py-7 | flex flex-wrap">
+    <section className="pt-7 | flex flex-wrap">
       {types.map((type, index) => (
         <div
           onClick={() => setFilter(type.slug)}
           className={cn({
-            "fc | text-sm font-bold | rounded-full | px-3 py-1 | click:scale mb-5 mr-3": true,
+            "fc | text-sm font-bold | rounded-full | px-3 py-1 | click:scale mr-3": true,
             "bg-[#30A8F7]": filter === type.slug,
             "bg-[#F2F9FF]": filter !== type.slug,
             "text-[#30A8F7]": filter !== type.slug,
