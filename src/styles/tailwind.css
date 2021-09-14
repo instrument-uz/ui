@@ -14,6 +14,10 @@ html {
   @apply flex items-center justify-center;
 }
 
+.fcb {
+  @apply flex items-center justify-between;
+}
+
 .fc {
   @apply flex items-center;
 }

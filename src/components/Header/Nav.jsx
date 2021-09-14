@@ -6,7 +6,7 @@ import SvgBag from "@/icons/SvgBag";
 
 function Nav(props) {
   return (
-    <nav className="fcc pl-7">
+    <nav className="fcc pl-7 | relative">
       <Link href="/auth/login">
         <Container className="flex items-center click:scale bg-[#EFF9FF] | px-4 py-1.5 | rounded-[7px]">
           <SvgUser className="h-6" />
