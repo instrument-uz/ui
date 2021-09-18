@@ -15,21 +15,27 @@ function Home() {
         <Header />
       </App.Header>
 
-      <App.Container className="pointer-events-none">
+      <App.Container>
         <Slider />
         <Categories />
         <Products
+          slides={4.2}
+          scroll={3}
           title={`Новинки`}
           type={`new`}
           url={`https://py.abad.uz/v1.0/api/categories/laptops/goods/?limit=16&offset=0&discount=0&brand=Apple`}
         />
         <Products
+          slides={4.2}
+          scroll={3}
           title={`Домашняя утварь`}
           url={`https://py.abad.uz/v1.0/api/categories/vacuum_cleaners/goods/?limit=16&offset=0&discount=0`}
         />
         <Brands />
 
         <Products
+          slides={4.2}
+          scroll={3}
           title={`Бытовая Техника`}
           url={`https://py.abad.uz/v1.0/api/categories/ovens/goods/?limit=16&offset=0&discount=0`}
         />
